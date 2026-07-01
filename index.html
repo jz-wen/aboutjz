@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of JZ, an interaction and experience design expert specializing in cloud products, complex systems, and design systems." />
+    <title>JZ — Interaction & Experience Design Expert</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="motion-layer" aria-hidden="true">
+      <div class="cursor-orb" id="cursorOrb"></div>
+      <div class="scroll-progress"><span id="scrollProgress"></span></div>
+      <div class="floating-index" id="floatingIndex">01 / Top</div>
+    </div>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="JZ home">JZ</a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#philosophy" data-nav="0">Philosophy</a>
+        <a href="#expertise" data-nav="1">Expertise</a>
+        <a href="#journey" data-nav="2">Journey</a>
+        <a href="#portfolio" data-nav="3">Portfolio</a>
+        <a href="#contact" data-nav="4">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="text-button" id="languageButton" type="button" aria-label="切换至中文">中文</button>
+        <button class="text-button theme-button" id="themeButton" type="button" aria-label="Change theme">Signal</button>
+        <button class="text-button menu-button" id="menuButton" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-index">01</div>
+        <div class="hero-title-wrap">
+          <p class="eyebrow">JZ / Index</p>
+          <h1 data-copy="role">Interaction &amp; Experience Design Expert</h1>
+        </div>
+        <div class="hero-meta">
+          <p><span data-copy="city">Beijing</span> <b>·</b> <span data-copy="years">16 years in design</span></p>
+          <p class="hero-idea" data-copy="idea">Ideas worth sharing.</p>
+          <p class="motto" data-copy="motto">Stay simple. Stay useful.</p>
+        </div>
+        <div class="hero-stages">
+          <span data-stage="0">Designing products.</span>
+          <span data-stage="1">Building systems.</span>
+          <span data-stage="2">Shaping organizations.</span>
+        </div>
+        <div class="kinetic-strip" aria-hidden="true">
+          <div class="kinetic-track">
+            <span>Simple</span><span>Useful</span><span>Curious</span><span>Empathic</span><span>Cloud UX</span><span>Design Systems</span>
+            <span>Simple</span><span>Useful</span><span>Curious</span><span>Empathic</span><span>Cloud UX</span><span>Design Systems</span>
+          </div>
+        </div>
+        <button class="arrow-link hero-enter open-gate" type="button"><span data-copy="enter">Enter portfolio</span><span aria-hidden="true">→</span></button>
+        <a class="scroll-cue" href="#philosophy">Scroll</a>
+      </section>
+
+      <section class="content-section philosophy" id="philosophy">
+        <div class="section-label"><span>02</span><span data-nav-label="0">Philosophy</span></div>
+        <h2 data-copy="philosophyTitle">A quiet force for clarity.</h2>
+        <div class="copy-columns">
+          <p class="lead-copy" data-copy="philosophy">Good design does not make complexity disappear. It gives complexity a form people can understand, trust, and use.</p>
+          <p data-copy="philosophyMore">I work where systems are large, decisions are consequential, and clarity matters—from enterprise transformation to global cloud infrastructure.</p>
+        </div>
+      </section>
+
+      <section class="content-section expertise" id="expertise">
+        <div class="section-label"><span>03</span><span data-nav-label="1">Expertise</span></div>
+        <div class="expertise-list" id="expertiseList"></div>
+      </section>
+
+      <section class="content-section journey" id="journey">
+        <div class="section-label"><span>04</span><span data-nav-label="2">Journey</span></div>
+        <div class="journey-heading">
+          <p data-copy="journeyTitle">Sixteen years, one continuous question:</p>
+          <h2 data-copy="journeyQuestion">How can complex technology feel clear?</h2>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="content-section private-section" id="portfolio">
+        <div class="section-label"><span>05</span><span data-nav-label="3">Portfolio</span></div>
+        <h2 data-copy="privateTitle">The work is private. The ideas are public.</h2>
+        <div class="private-action">
+          <p data-copy="privateBody">Detailed experience and case studies are shared with the right context. Enter the access code to explore the full portfolio.</p>
+          <button class="arrow-link open-gate" type="button"><span data-copy="enter">Enter portfolio</span><span aria-hidden="true">→</span></button>
+        </div>
+        <div class="private-preview open-gate" role="button" tabindex="0" aria-label="Preview locked portfolio">
+          <article><span>01</span><strong>Xconsole</strong><em>Design solution platform</em></article>
+          <article><span>02</span><strong>Xbuild</strong><em>Low-code platform</em></article>
+          <article><span>03</span><strong>Alibaba Cloud App</strong><em>iF Award concept</em></article>
+        </div>
+      </section>
+
+      <section class="content-section contact" id="contact">
+        <div class="section-label"><span>06</span><span data-nav-label="4">Contact</span></div>
+        <h2 data-copy="contactTitle">Ideas become more useful when shared.</h2>
+        <a href="mailto:jz.wen@outlook.com">jz.wen@outlook.com <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© JZ · <span data-copy="city">Beijing</span></span>
+      <span data-copy="idea">Ideas worth sharing.</span>
+      <a href="#top">Top</a>
+    </footer>
+
+    <div class="modal-backdrop" id="modal" hidden>
+      <section class="gate-modal" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+        <button class="modal-close text-button" id="closeModal" type="button">Close</button>
+        <div id="gateFormView">
+          <p class="eyebrow">Private portfolio</p>
+          <h2 id="gateTitle" data-copy="privateTitle">The work is private. The ideas are public.</h2>
+          <p data-copy="privateBody">Detailed experience and case studies are shared with the right context.</p>
+          <form id="gateForm">
+            <label for="accessCode" data-copy="codeLabel">Access code</label>
+            <input id="accessCode" autocomplete="off" />
+            <p class="form-error" id="formError" role="alert" hidden data-copy="error">That code does not look right. Please try again.</p>
+            <button class="primary-button" type="submit"><span data-copy="unlock">Unlock portfolio</span><span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+        <div class="success-state" id="successView" hidden>
+          <p class="success-mark">OK</p>
+          <h2 data-copy="unlocked">Portfolio unlocked</h2>
+          <p data-copy="unlockedBody">The complete project archive will appear here as case-study material is added.</p>
+          <button class="primary-button" id="successClose" type="button" data-copy="close">Close</button>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
